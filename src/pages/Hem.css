@@ -1,0 +1,34 @@
+.front-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.front-page-blurb{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.front-page-teasers{
+    /* margin-top: auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* .front-page-box-container{
+    display: flex;
+} */
+
+/* Want these to go snug to the footer, but for some reason having trouble with it with margin-top -- maybe due to undefined heights or properties of other objects, or because the footer's loaded in a separate file. */
+
+.front-page-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 20vh;
+    background-color: gray;
+    /* padding: 2em; */
+}

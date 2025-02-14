@@ -1,0 +1,87 @@
+:root{
+  --main-bg-color: #2B2B2B;
+  --main-text-color: #FCFFD6;
+  --accent-color: #E2AA42
+}
+
+body{
+  background-color: var(--main-bg-color);
+  padding: 0;
+  margin: 0;
+  font-family: 'League Spartan'
+}
+
+h2{
+  color: var(--main-text-color)
+}
+
+.header-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--main-bg-color);
+  border-bottom: 1px dashed white;
+}
+
+.header-nav > a{
+  align-self: center;
+  font-family: 'League Gothic';
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--main-text-color)
+}
+
+.header-options{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-options > a{
+  font-family: 'League Spartan';
+  text-decoration: none;
+  color: var(--main-text-color)
+}
+
+.footer{
+  position: fixed;
+  left: 0; 
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  /* height: 15vh; */
+  background-color: var(--main-bg-color);
+  align-items: center;
+  /* padding: 1em; */
+}
+
+li{
+  color: var(--main-text-color)
+}
+
+.footer-column{
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column, .footer-column > *{
+  color: var(--main-text-color)
+}
+
+.footer-social-media{
+  display: flex;
+  gap: 5px;
+}
+
+.opening-hours{
+  margin-left: auto;
+  margin-right: 2em;
+}
+
+ul{
+  list-style: none;
+}
+
+/* @media screen */
