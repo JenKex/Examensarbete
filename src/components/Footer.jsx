@@ -1,11 +1,13 @@
+import { FaInstagram, FaTiktok, FaFacebookF } from 'react-icons/fa6'
+
 export function Footer() {
     return (
         <div className="footer">
             <div className="footer-column">Följ oss på:
                 <div className="footer-social-media">
-                    <div>FB</div>
-                    <div>Instagram</div>
-                    <div>TikTok</div>
+                    <div><FaInstagram/></div>
+                    <div><FaTiktok/></div>
+                    <div><FaFacebookF/></div>
                 </div>
             </div>
             <ul className="opening-hours">

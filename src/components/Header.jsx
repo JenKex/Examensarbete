@@ -6,8 +6,8 @@ export function Header() {
     return (
         <nav className="header-nav">
             {/* Make this an image asset; import logo */}
-            <Link to="/">
-                BnP
+            <Link className="site-logo" to="/">
+                150G Burgare
             </Link>
             <div className="header-options">
                 <Link to="/meny">

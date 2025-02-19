@@ -17,19 +17,18 @@ export function Hem() {
                 <button>Beställ från Foodora</button>
             </div>
             <div className="front-page-teasers">
-                    <div className="front-page-box">
+                    <div className="front-page-box-rounded-left">
                         <h4>Burgarhungrig?</h4>
-                        <p></p>
+                        <p>→</p>
                         <button>VÅRA BURGARE</button>
                     </div>
-                    <div className="front-page-box-image">
-
+                    <div className="front-page-image-burger">
                     </div>
-                    <div className="front-page-box-image">
+                    <div className="front-page-image-pizza">
                     </div>
-                    <div className="front-page-box">
+                    <div className="front-page-box-rounded-right">
                         <h4>Pizzasugen?</h4>
-                        <p></p>
+                        <p>←</p>
                         <button>VÅRA PIZZOR</button>
                     </div>
             </div>

@@ -1,0 +1,16 @@
+:root{
+    --main-bg-color: #d7bd8d;
+    --main-text-color: #151515;
+    --accent-color: #731414;
+    --contrast-color: #FAFFC3;
+  }
+
+.about-us-blurb{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--contrast-color);
+    border-radius: 1em;
+    border: 3px dashed var(--accent-color)
+}

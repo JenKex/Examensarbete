@@ -1,3 +1,10 @@
+:root{
+    --main-bg-color: #d7bd8d;
+    --main-text-color: #151515;
+    --accent-color: #731414;
+    --contrast-color: #FAFFC3;
+  }
+
 .front-page{
     display: flex;
     flex-direction: column;
@@ -8,10 +15,16 @@
     padding: 1em;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: var(--contrast-color);
+    border-radius: 1em;
+    border: 3px dashed var(--accent-color)
 }
 
 .front-page-teasers{
     /* margin-top: auto; */
+    margin-top: 3em;
+    /* margin-bottom: 3em; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -23,12 +36,53 @@
 
 /* Want these to go snug to the footer, but for some reason having trouble with it with margin-top -- maybe due to undefined heights or properties of other objects, or because the footer's loaded in a separate file. */
 
-.front-page-box{
+[class ^="front-page-box"]{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50vw;
     height: 20vh;
-    background-color: gray;
+    /* padding: 1em; */
+    background-color: var(--contrast-color);
+    /* border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em; */
     /* padding: 2em; */
+}
+
+[class ^="front-page-box"] > p{
+    color: var(--main-text-color);
+}
+
+.front-page-box-rounded-left{
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+}
+
+.front-page-box-rounded-right{
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+}
+
+[class ^="front-page-image"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 20vh;
+    /* padding: 1em; */
+    background-size: cover;
+}
+
+.front-page-image-pizza{
+    background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.front-page-image-burger{
+    background-image: url("https://images.unsplash.com/photo-1582900125020-4d314f8a5de8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D");
+    background-position-x: center;
+}
+
+button{
+    max-width: 10em;
+    margin-bottom: 1em;
 }
