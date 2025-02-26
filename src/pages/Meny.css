@@ -30,10 +30,11 @@ body{
     max-width: 80vw;
 }
 
-.menu-grouping-start{
+[class ^="menu-grouping-start"]{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .menu-icon{
@@ -44,7 +45,8 @@ body{
 
 .menu-grouping-headline{
     text-align: center;
-    width: 35vw;
+    min-width: 20vw;
+    max-width: 35vw;
     border-bottom: 3px solid var(--main-text-color);
 }
 
@@ -62,4 +64,47 @@ h1, h2, h3{
 
 .highlight{
     color: var(--accent-color);
+}
+
+.menu-page{
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 800px){
+    .menu-grouping{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around;
+        /* max-width: 90vw; */
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(100px, 1fr) */
+        /* grid-auto-rows: 1fr; */
+    }
+
+    .menu-grouping-start-burgers{
+        /* justify-self: start;
+        place-content: start;
+        grid-row: 1; */
+    }
+
+    .menu-grouping-start-fries{
+        /* justify-self: start;
+        place-content: start;
+        grid-row: 1; */
+    }
+
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .menu-pizzas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 40vw;
+    }
 }

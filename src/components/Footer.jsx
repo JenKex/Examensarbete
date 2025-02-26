@@ -5,9 +5,9 @@ export function Footer() {
         <div className="footer">
             <div className="footer-column">Följ oss på:
                 <div className="footer-social-media">
-                    <div><FaInstagram/></div>
-                    <div><FaTiktok/></div>
-                    <div><FaFacebookF/></div>
+                    <a href="https://www.instagram.com/150gburgers/?hl=en"><FaInstagram/></a>
+                    <a href="https://www.tiktok.com/@150gburgers"><FaTiktok/></a>
+                    <a href="https://www.facebook.com/150gburgers/?locale=sv_SE"><FaFacebookF/></a>
                 </div>
             </div>
             <ul className="opening-hours">

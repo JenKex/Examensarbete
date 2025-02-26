@@ -1,16 +1,65 @@
-:root{
-    --main-bg-color: #d7bd8d;
-    --main-text-color: #151515;
-    --accent-color: #731414;
-    --contrast-color: #FAFFC3;
-  }
+:root {
+  --main-bg-color: #d7bd8d;
+  --main-text-color: #151515;
+  --accent-color: #731414;
+  --contrast-color: #FAFFC3;
+}
 
-.about-us-blurb{
+.about-us-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .restaurant-image {
+  max-width: 95vw;
+  border-radius: 1.5em;
+} */
+
+.restaurant-image-blurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 95vw;
+  border-radius: 1.5em;
+  background-image: url("https://www.mitti.se/image-3.257534.143419.20231004122147.17a1c18f46?size=512");
+  background-size: cover;
+  padding: 1em;
+  margin: 1em;
+}
+
+.about-us-blurb {
+  max-width: 60vw;
+  padding: 2em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--contrast-color);
+  border-radius: 1em;
+  border: 3px dashed var(--accent-color);
+  font-size: large;
+}
+
+.social-media-container{
+  display: flex;
+  /* align-items: center; */
+  min-width: 10vw;
+  max-width: 20vw;
+  justify-content: space-around;
+  /* gap: 2em; */
+}
+
+.social-media-container > *{
+  font-size: xx-large;
+}
+
+@media screen and (width > 800px) {
+  .restaurant-image-blurb {
+    max-width: 95vw;
+    min-height: 60vh;
     padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--contrast-color);
-    border-radius: 1em;
-    border: 3px dashed var(--accent-color)
+    margin: 1em;
+  }
 }

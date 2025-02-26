@@ -1,7 +1,10 @@
 import React from 'react'
 import './Hem.css'
+import { useNavigate } from 'react-router-dom'
 
 export function Hem() {
+    const navigate = useNavigate()
+
     return (
         <div className="front-page">
             <div className="front-page-blurb">
@@ -13,14 +16,17 @@ export function Hem() {
                     <li>Lördag: 12-22</li>
                     <li>Söndag: 12-21</li>
                 </ul>
-                <button>Se vår meny</button>
-                <button>Beställ från Foodora</button>
+                <div className="blurb-button-container">
+                <button onClick={() => navigate('/meny')}>Se vår meny</button>
+                {/* Styla externa a-linkar att likna och bete sig som buttons */}
+                <button><a href="https://www.foodora.se/restaurant/ykxd/150g-burgers">Beställ från Foodora</a></button>
+                </div>
             </div>
             <div className="front-page-teasers">
                     <div className="front-page-box-rounded-left">
                         <h4>Burgarhungrig?</h4>
                         <p>→</p>
-                        <button>VÅRA BURGARE</button>
+                        <button onClick={() => navigate('/meny#burgers')}>VÅRA BURGARE</button>
                     </div>
                     <div className="front-page-image-burger">
                     </div>
@@ -29,7 +35,7 @@ export function Hem() {
                     <div className="front-page-box-rounded-right">
                         <h4>Pizzasugen?</h4>
                         <p>←</p>
-                        <button>VÅRA PIZZOR</button>
+                        <button onClick={() => navigate('/meny#pizzas')}>VÅRA PIZZOR</button>
                     </div>
             </div>
         </div>
