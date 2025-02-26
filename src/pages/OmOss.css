@@ -55,7 +55,7 @@
   font-size: xx-large;
 }
 
-@media screen and (width > 800px) {
+@media screen and (min-width: 800px) {
   .restaurant-image-blurb {
     max-width: 95vw;
     min-height: 60vh;

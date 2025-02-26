@@ -39,15 +39,21 @@ h2{
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  height: 10vh;
+  max-height: 15vh;
+  padding-top: 1em;
+  margin-bottom: 1em;
   /* background-color: var(--main-bg-color); */
   /* border-bottom: 1px dashed white; */
+}
+
+.site-logo{
+  margin-bottom: auto;
 }
 
 .header-nav > a{
   align-self: center;
   font-family: 'League Gothic';
-  font-size: 30px;
+  font-size: xx-large;
   text-decoration: none;
   color: var(--main-text-color)
 }
@@ -55,23 +61,23 @@ h2{
 .header-options{
   display: flex;
   justify-content: space-evenly;
+  margin-top: 0.5em;
 }
 
 .header-options > a{
   font-family: 'League Spartan';
   text-decoration: none;
-  color: var(--main-text-color)
+  color: var(--main-text-color);
+  font-size: large;
+  font-weight: bold;
 }
 
 .footer{
   position: sticky;
-  /* left: 0; 
-  bottom: 0; */
   display: flex;
   width: 100vw;
-  /* height: 15vh; */
-  /* background-color: var(--main-bg-color); */
   align-items: center;
+  /* padding-top: 1em; */
   /* margin-top: 1em; */
   /* padding: 1em; */
 }

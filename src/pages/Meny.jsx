@@ -7,6 +7,9 @@ import { MenuItem } from '../components/MenuItem.jsx'
 // Potential option: Admin-function that renders out every burger in a JSON-list, .mapping out from that and letting the admin change individual items?
 
 export function Meny() {
+
+    // Potential option to fix React not working with hash-links -- check router, and if it matches #pizzor or #burgare, run a function to scrollIntoView() to that section
+
     return (
         <div className="menu-page">
             <div className="menu-page-offer">
@@ -16,7 +19,7 @@ export function Meny() {
             </div>
             <div className="menu-grouping">
                 <div className="menu-grouping-start-burgers">
-                    <FaBurger className="menu-icon" id="burgers" />
+                    <FaBurger className="menu-icon" id="burgare" />
                     <h1 className="menu-grouping-headline highlight">BURGARE</h1>
                     <MenuItem props={{ name: "Cheeseburger", price: "129:-", ingredients: "Classic mayo, ketchup, senap, tomat, pickles, gullök och cheddar" }} />
                     <MenuItem props={{ name: "Spicy truffle", price: "139:-", ingredients: "Tryffelmajo, karameliserad lök, emmendalerost och Pepper Jack cheese" }} />
@@ -31,7 +34,7 @@ export function Meny() {
             </div>
             <div className="menu-grouping-pizzas">
                 <div className="menu-grouping-start">
-                    <FaPizzaSlice className="menu-icon" id="pizzas" />
+                    <FaPizzaSlice className="menu-icon" id="pizzor" />
                     <h1 className="menu-grouping-headline highlight">PIZZOR</h1>
                     <div className="menu-pizzas">
                         <MenuItem props={{ name: "Placeholder", price: "119:-", ingredients: "Placeholder" }} />
