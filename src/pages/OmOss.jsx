@@ -8,7 +8,8 @@ export function OmOss() {
             <div className="restaurant-image-blurb" role="img" alt="En bild av 150G Burgers, en burgarrestaurang under en solig dag. Folk äter på uteserveringen och dörren är öppen. Inuti finns bord, stolar och restaurangens kök med kryddor och burgaringredienser vid disken.">
                 {/* <img className="restaurant-image" src="https://www.mitti.se/image-3.257534.143419.20231004122147.17a1c18f46?size=512"></img> */}
                 <div className="about-us-blurb">
-                    <p>Med ett smarrigt utbud av burgare, surdegspizzor, och kryddiga sides har vi serverat gott käk och god stämning i år och dar.</p>
+                    <p>Med ett smarrigt utbud av burgare, surdegspizzor, och kryddiga sides har vi serverat gott käk och god stämning i år och dar. Vi erbjuder flera vegetariska och glutenfria alternativ, och breddar ofta vårat sortiment.</p>
+                    <p>Vi finns på flera takeaway-plattformer, bland annat Foodora, Wolt, och Uber Eats.</p>
                     <h2>Vill du veta mer? Eller bara säga hur gott det var? Följ oss på:</h2>
                     <div className="social-media-container">
                     <a href="https://www.instagram.com/150gburgers/?hl=en"><FaInstagram/></a>

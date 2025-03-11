@@ -52,7 +52,7 @@ h2{
 
 .header-nav > a{
   align-self: center;
-  font-family: 'League Gothic';
+  font-family: 'Alkatra';
   font-size: xx-large;
   text-decoration: none;
   color: var(--main-text-color)
@@ -90,6 +90,8 @@ li{
   margin-left: 1em;
   display: flex;
   flex-direction: column;
+  /* margin-top: auto;
+  margin-bottom: 1em; */
 }
 
 .footer-column, .footer-column > *{

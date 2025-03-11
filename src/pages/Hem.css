@@ -61,6 +61,7 @@
 
 [class ^="front-page-box"] > p{
     color: var(--main-text-color);
+    font-size: x-large;
 }
 
 .front-page-box-rounded-left{

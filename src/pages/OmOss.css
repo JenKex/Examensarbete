@@ -57,9 +57,9 @@
 
 @media screen and (min-width: 800px) {
   .restaurant-image-blurb {
-    max-width: 95vw;
+    /* max-width: 75vw; */
     min-height: 60vh;
-    padding: 1em;
-    margin: 1em;
+    /* padding: 1em;
+    margin: 1em; */
   }
 }

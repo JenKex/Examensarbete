@@ -7,7 +7,7 @@ export function Header() {
         <nav className="header-nav">
             {/* Make this an image asset; import logo */}
             <Link className="site-logo" to="/">
-                150G Burgare
+                150G Burgers
             </Link>
             <div className="header-options">
                 <Link to="/meny">
