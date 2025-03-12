@@ -87,6 +87,10 @@ h1, h2, h3{
     color: rgb(23, 71, 23);
 }
 
+.price-tag{
+    font-size: large;
+}
+
 /* .offer-container{
     display: flex;
     align-items: center;

@@ -67,7 +67,8 @@ export function Meny() {
             </div>
             <div className="menu-grouping-dips">
                 <div className="menu-grouping-start">
-                    <h1 className="menu-grouping-headline highlight">DIPP 10:-</h1>
+                    <h1 className="menu-grouping-headline highlight">DIPP</h1>
+                    <p className="price-tag">Alla dippar kostar 10:-</p>
                     <div className="menu-dips">
                         <MenuItem props={{ name: "Klassisk majo" }} />
                         <MenuItem props={{ name: "Habanero-majo" }} />
